@@ -1,0 +1,116 @@
+*{
+    
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+.clr{
+    clear: both;
+}
+.header{
+    text-align: start;
+    font-size:50px;
+    color:palevioletred;
+    background-color: rgb(255, 221, 227);
+}
+#bg{
+    background-image: url("images/female.jpg");
+    width: 100%;
+    min-height: 400px;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: border-box;
+    color: white;
+    text-align: center;
+    padding: 150px 30px 150px 30px;
+   
+}
+    .h-intro{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.p-intro{
+    font-size: 1rem;
+}
+#about-us{
+    float: left;
+    width: 65%;
+    padding:60px;
+    text-align: justify;
+    box-sizing: border-box;
+}
+#about-us h2{
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: palevioletred;
+}
+#about-us p{
+    margin-bottom: 10px;
+}
+a{
+    text-decoration: none;
+}
+#about-us .btn,#services a{
+    padding: 5px;
+    color: white;
+    background: palevioletred;
+    border-radius: 5px;
+    border:1px palevioletred solid;
+}
+#about-us .btn:hover,#services a:hover{
+    column-rule: palevioletred;
+    border:1px rgb(233, 164, 227) solid;
+    background-color: rgb(233, 164, 227);
+}
+.img-back{
+    margin: 10px;
+    margin-bottom: 20px;
+    float: right;
+    width: 30%;
+    background-color: rgb(233, 164, 227);
+    border-radius: 50%;
+    border-end-start-radius: 40px;
+    box-sizing: border-box;
+
+}
+.img-abt{
+    width: 80%;
+    margin: 20px;
+    border-radius: 50%;
+    border-end-start-radius: 40px;
+    border: 16px solid palevioletred;
+}
+#services{
+    background-image: url('images/pinkwhite.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px;
+    text-align: center;
+}
+#services h2{
+    color: white;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+#services ol{
+    margin-bottom: 15px;
+}
+#services ol li{
+    font-size:18px;
+    list-style: none;
+    color: rgb(254, 254, 254);
+}
+@media (max-width:700px){
+    #about-us{
+        float: none;
+       width: 100%; 
+      } 
+    .img-back{
+        margin-top: -90px;
+        width: 50%;
+        float: right;
+    }
+
+
+}
