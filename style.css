@@ -8,10 +8,10 @@
     clear: both;
 }
 .header{
-    text-align: start;
+    text-align: center;
     font-size:50px;
     color:palevioletred;
-    background-color: rgb(255, 221, 227);
+    /* background-color: rgb(255, 221, 227); */
 }
 #bg{
     background-image: url("images/female.jpg");
@@ -40,7 +40,7 @@
     text-align: justify;
     box-sizing: border-box;
 }
-#about-us h2{
+#about-us h2,.achieve h2{
     font-size: 40px;
     margin-bottom: 10px;
     color: palevioletred;
@@ -51,14 +51,14 @@
 a{
     text-decoration: none;
 }
-#about-us .btn,#services a{
+#about-us .btn,#services a,.contact input[type=submit]{
     padding: 5px;
     color: white;
     background: palevioletred;
     border-radius: 5px;
     border:1px palevioletred solid;
 }
-#about-us .btn:hover,#services a:hover{
+#about-us .btn:hover,#services a:hover,.contact input[type=submit]:hover{
     column-rule: palevioletred;
     border:1px rgb(233, 164, 227) solid;
     background-color: rgb(233, 164, 227);
@@ -80,6 +80,10 @@ a{
     border-radius: 50%;
     border-end-start-radius: 40px;
     border: 16px solid palevioletred;
+    transition: 0.2s;
+}
+.img-abt:hover{
+transform: scale(1.1);
 }
 #services{
     background-image: url('images/pinkwhite.jpg');
@@ -87,11 +91,20 @@ a{
     background-size: cover;
     padding: 30px;
     text-align: center;
+    transition: 0.2s;
+}
+#services:hover{
+    transform: scale(1.1);
 }
 #services h2{
     color: white;
     font-size: 40px;
     margin-bottom: 10px;
+    transition: 0.2s;
+}
+#services h2:hover{
+color: palevioletred;
+transform: translateY(-2px);
 }
 #services ol{
     margin-bottom: 15px;
@@ -100,6 +113,61 @@ a{
     font-size:18px;
     list-style: none;
     color: rgb(254, 254, 254);
+}
+.achieve{
+    text-align: center;
+    padding: 30px;
+}
+#table{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 75%;
+}
+#table th,#table td {
+    border: 1px solid #ffc9f8;
+    padding: 8px;
+  }
+#table tr:nth-child(even){
+    background-color: #facff5;
+}
+
+#table tr:hover {
+    background-color: #ffecec;
+}
+#table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: palevioletred;
+    color: white;
+  }
+  .end{
+    display: flex;
+    padding: 20px;
+    background-color: #facff5;
+  }
+  .branch{
+    color: #000;
+    padding: 50px;
+  }
+  .branch ul li{
+    color: white;
+  }
+  .branch h3,.contact h3{
+    color: palevioletred;
+    font-size: 25px;
+  }
+  .contact{
+    padding: 30px;
+  }
+  footer{
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(106, 100, 100);
+    color: white;
+}
+span{
+    color: palevioletred;
 }
 @media (max-width:700px){
     #about-us{
@@ -111,6 +179,13 @@ a{
         width: 50%;
         float: right;
     }
+    .end{
+       flex-direction: column; 
+    }
+    .branch{
+        padding: 5px;
+        
+      }
 
 
 }
